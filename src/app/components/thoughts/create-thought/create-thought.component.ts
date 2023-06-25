@@ -25,7 +25,6 @@ export class CreateThoughtComponent implements OnInit {
   }
 
   cancelar() {
-    alert('Ação cancelada')
   }
 
 }
