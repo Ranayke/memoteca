@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Pensamento } from '../pensamento';
+import { ThoughtService } from '../thought.service';
 
 @Component({
   selector: 'app-thought',
@@ -12,10 +13,13 @@ export class ThoughtComponent implements OnInit {
     id: 0,
     conteudo: 'I love Angular',
     autoria: 'Ranayke',
-    modelo: 'modelo3'
+    modelo: 'modelo3',
+    favorito: false
   }
 
-  constructor() {}
+  constructor(
+    private thoughtService: ThoughtService
+  ) {}
 
   ngOnInit(): void {
   }
@@ -25,6 +29,19 @@ export class ThoughtComponent implements OnInit {
       return 'pensamento-g'
     }
     return 'pensamento-p'
+  }
+
+  mudarIconeFavorito(): string {
+    if(this.pensamento.favorito == false) {
+      return 'inativo'
+    } else {
+      return 'ativo'
+    }
+  }
+
+  atualizarFavoritos() {
+    this.thoughtService.mudarFavorito(this.pensamento)
+      .subscribe();
   }
 
 }
