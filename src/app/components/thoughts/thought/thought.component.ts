@@ -17,6 +17,8 @@ export class ThoughtComponent implements OnInit {
     favorito: false
   }
 
+  @Input() listaFavoritos: Pensamento[] = [];
+
   constructor(
     private thoughtService: ThoughtService
   ) {}
@@ -41,7 +43,9 @@ export class ThoughtComponent implements OnInit {
 
   atualizarFavoritos() {
     this.thoughtService.mudarFavorito(this.pensamento)
-      .subscribe();
+      .subscribe(() => {
+        this.listaFavoritos.splice(this.listaFavoritos.indexOf(this.pensamento), 1)
+      });
   }
 
 }

@@ -5,14 +5,14 @@
       "conteudo": "Que bom que vc veio",
       "autoria": "Nay",
       "modelo": "modelo1",
-      "favorito": true
+      "favorito": false
     },
     {
       "id": 2,
       "conteudo": "Estudando Angular",
       "autoria": "Dev Alura",
       "modelo": "modelo2",
-      "favorito": false
+      "favorito": true
     },
     {
       "id": 3,
@@ -22,39 +22,18 @@
       "favorito": true
     },
     {
-      "conteudo": "gdfgdgdf",
-      "autoria": "dfgdfgdfg",
-      "modelo": "modelo1",
-      "favorito": false,
-      "id": 4
-    },
-    {
+      "id": 5,
       "conteudo": "dfgdfgdfg",
       "autoria": "dgdfgdfgdg",
-      "modelo": "modelo3",
-      "favorito": false,
-      "id": 5
-    },
-    {
-      "conteudo": "dfgdfgdfgdfgdfg",
-      "autoria": "dfgdfgdfgdfgfd",
       "modelo": "modelo2",
-      "favorito": false,
-      "id": 6
+      "favorito": false
     },
     {
-      "conteudo": "dfgdfgdfgdfg",
-      "autoria": "dfgdfgdfgdfgd",
+      "conteudo": "testando",
+      "autoria": "rana",
       "modelo": "modelo1",
       "favorito": false,
-      "id": 7
-    },
-    {
-      "conteudo": "dfgdfgdfgfdg",
-      "autoria": "dfgdfgdfgdfgdfgdfgfdg",
-      "modelo": "modelo3",
-      "favorito": false,
-      "id": 8
+      "id": 6
     }
   ]
 }
